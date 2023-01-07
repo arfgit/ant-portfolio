@@ -11,7 +11,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-montserrat text-5xl font-bold">af</h4>
+        <h4 className="font-montserrat text-3xl font-bold">{"<af />"}</h4>
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-16 font-karla text-base font-semibold">
@@ -35,6 +35,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+
+            {/* <Links
+              page="Resume"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            /> */}
           </div>
         ) : (
           <button
