@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import Landing from "./components/home/Landing";
 import Dots from "./components/nav/Dots";
 import Navbar from "./components/nav/Navbar";
-import useMediaQuery from "./hooks/useMediaQuery";
+import Skills from "./components/skills/Skills";
+import LineGradient from "./features/gradients/LineGradient";
+import useMediaQuery from "./features/hooks/useMediaQuery";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -27,12 +29,18 @@ function App() {
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
-
+      {/* LANDING */}
       <div className="w-5/6 mx-auto md:h-full">
         {isAboveMediumScreens && (
           <Dots selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
         <Landing setSelectedPage={setSelectedPage} />
+      </div>
+      <LineGradient />
+
+      {/* SKILLS */}
+      <div className="w-5/6 mx-auto md:h-full">
+        <Skills />
       </div>
     </div>
   );
