@@ -54,13 +54,14 @@ const Landing = ({ setSelectedPage }) => {
             <span className="xs:relative xs:text-deep-blue xs:font-extrabold z-20 xs:before:content-brush before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]">
               Feliz
             </span>
-            <p className="mt-6 mb-7 font-karla font-light text-4xl text-center md:text-start">
+            <p className="mt-5 mb-7 font-karla font-light text-4xl text-center md:text-start">
               Full Stack Software Engineer
             </p>
           </p>
-          <p className="-mt-5 mb-7 font-karla text-xl text-center md:text-start">
-            Lorem ipsum is placeholder text commonly used in the graphic, print,
-            and publishing industries.
+          <p className="mt-5 mb-7 font-karla text-xl text-center md:text-start">
+            I am an active engineer committed to learning and developing new
+            skills. To me, a career in tech means giving back to the world and
+            being a part of something that will never stop growing.
           </p>
         </motion.div>
 
