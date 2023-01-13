@@ -6,6 +6,7 @@ const SocialMediaIcons = () => {
         href="http://www.linkedin.com/in/anthonyfeliz"
         target="_blank"
         rel="noreferrer"
+        title="LinkedIn"
       >
         <img alt="linkedin-link" src="../assets/linkedIn-invert-48.png" />
       </a>
@@ -14,6 +15,7 @@ const SocialMediaIcons = () => {
         href="https://github.com/arfgit"
         target="_blank"
         rel="noreferrer"
+        title="Github"
       >
         <img alt="github-link" src="../assets/github-inverted-48.png" />
       </a>

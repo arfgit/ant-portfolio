@@ -11,28 +11,28 @@ const Dots = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "home" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="home"
+        href="#home"
         onClick={() => setSelectedPage("home")}
       />
       <AnchorLink
         className={`${
           selectedPage === "skills" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="skills"
+        href="#skills"
         onClick={() => setSelectedPage("skills")}
       />
       <AnchorLink
         className={`${
           selectedPage === "projects" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="projects"
+        href="#projects"
         onClick={() => setSelectedPage("projects")}
       />
       <AnchorLink
         className={`${
           selectedPage === "contacts" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="contacts"
+        href="#contacts"
         onClick={() => setSelectedPage("contacts")}
       />
     </div>

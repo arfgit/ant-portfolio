@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Landing from "./components/home/Landing";
 import Dots from "./components/nav/Dots";
 import Navbar from "./components/nav/Navbar";
+import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 import LineGradient from "./features/gradients/LineGradient";
 import useMediaQuery from "./features/hooks/useMediaQuery";
@@ -13,12 +14,13 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setIsTopOfPage(true);
+      if (window.scrollY === 0) {
+        setIsTopOfPage(true);
+        setSelectedPage("home");
+      }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -41,6 +43,11 @@ function App() {
       {/* SKILLS */}
       <div className="w-5/6 mx-auto md:h-full">
         <Skills />
+      </div>
+      <LineGradient />
+      {/* Projects */}
+      <div className="w-5/6 mx-auto">
+        <Projects />
       </div>
     </div>
   );

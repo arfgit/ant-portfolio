@@ -2,7 +2,7 @@ import React from "react";
 import useMediaQuery from "../../features/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import SocialMediaIcons from "../icons/SocialMediaIcons";
+import SocialMediaIcons from "../../features/icons/SocialMediaIcons";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -49,15 +49,15 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-montserrat font-extrabold z-10 text-center md:text-start">
+          <div className="text-6xl font-montserrat font-extrabold z-10 text-center md:text-start">
             Anthony{" "}
             <span className="xs:relative xs:text-deep-blue xs:font-extrabold z-20 xs:before:content-brush before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]">
               Feliz
             </span>
-            <p className="mt-5 mb-7 font-karla font-light text-4xl text-center md:text-start">
+            <p className="mt-5 mb-7 font-montserrat font-semibold text-4xl text-center md:text-start">
               Full Stack Software Engineer
             </p>
-          </p>
+          </div>
           <p className="mt-5 mb-7 font-karla text-xl text-center md:text-start">
             I am an active engineer committed to learning and developing new
             skills. To me, a career in tech means giving back to the world and
