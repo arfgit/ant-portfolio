@@ -18,12 +18,42 @@ const projects = [
     image: "../assets/beatdriver.png",
     github: "",
     deployed: "",
-    stack: ["../assets/nextjs-32.png"],
+    stack: [
+      { name: "Nextjs", image: "../assets/Nextjs-32.png" },
+      { name: "React", image: "../assets/React-32.png" },
+      { name: "Web Audio API", image: "../assets/WebAudioAPI-32.png" },
+      { name: "Firebase", image: "../assets/Firebase-32.png" },
+      { name: "Nodejs", image: "../assets/Nodejs-32.png" },
+      { name: "Tailwind CSS", image: "../assets/tailwindCSS-32.png" },
+    ],
   },
   {
     title: "Chit Chat",
     description:
       "Chit Chat is an app where users can message other logged-in users. The primary focus of this app was to set up a real-time chat with a filter to block toxic messages.",
+    image: "../assets/beatdriver.png",
+    github: "",
+    deployed: "",
+    stack: [
+      { name: "React", image: "../assets/React-32.png" },
+      { name: "Firebase", image: "../assets/Firebase-32.png" },
+      { name: "Tensorflow", image: "../assets/tensorflow-32.png" },
+    ],
+  },
+  {
+    title: "GameMap",
+    description:
+      "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
+    image: "../assets/beatdriver.png",
+    github: "",
+    deployed: "",
+    stack: [
+      { name: "PostgreSQL", image: "../assets/postgresql-32.png" },
+      { name: "Express", image: "../assets/express-32.png" },
+      { name: "React", image: "../assets/React-32.png" },
+      { name: "Nodejs", image: "../assets/Nodejs-32.png" },
+      { name: "Material UI", image: "../assets/MUI-32.png" },
+    ],
   },
 ];
 
@@ -79,17 +109,6 @@ const Projects = () => {
             />
           ))}
 
-          <Project title="Project 1" />
-          <Project title="Project 2" />
-
-          {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
-
-          {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
