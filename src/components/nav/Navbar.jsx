@@ -14,7 +14,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-montserrat text-3xl font-bold  hover:text-yellow ease-in transition duration-200">
           <AnchorLink href="#home" onClick={() => setSelectedPage("home")}>
-            {"< af >"}
+            af
           </AnchorLink>
         </h4>
         {/* DESKTOP NAV */}

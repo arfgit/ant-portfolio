@@ -51,7 +51,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <div className="text-6xl font-montserrat font-extrabold z-10 text-center md:text-start">
             Anthony{" "}
-            <span className="xs:relative xs:text-deep-blue xs:font-extrabold z-20 xs:before:content-brush before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]">
+            <span className="xs:relative xs:font-extrabold z-20 xs:before:content-brush before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]">
               Feliz
             </span>
             <p className="mt-5 mb-7 font-montserrat font-semibold text-4xl text-center md:text-start">

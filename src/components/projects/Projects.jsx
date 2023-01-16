@@ -16,15 +16,15 @@ const projects = [
     description:
       "Beatdriver is a beginner-friendly music creation tool you can use right in the browser. Users can create beats with built-in sounds and effects, upload their samples, and save and record their projects to share with anyone!",
     image: "../assets/beatdriver.png",
-    github: "",
-    deployed: "",
+    github: "https://github.com/FC-TEAM-VISA/music-collab-app",
+    deployed: "https://beatdriver.vercel.app/",
     stack: [
-      { name: "Nextjs", image: "../assets/Nextjs-32.png" },
-      { name: "React", image: "../assets/React-32.png" },
-      { name: "Web Audio API", image: "../assets/WebAudioAPI-32.png" },
-      { name: "Firebase", image: "../assets/Firebase-32.png" },
-      { name: "Nodejs", image: "../assets/Nodejs-32.png" },
-      { name: "Tailwind CSS", image: "../assets/tailwindCSS-32.png" },
+      { name: "Nextjs", image: "../assets/png-32px/nextjs-32.png" },
+      { name: "React", image: "../assets/png-32px/React-32.png" },
+      { name: "Web Audio API", image: "../assets/png-32px/WebAudioAPI-32.png" },
+      { name: "Firebase", image: "../assets/png-32px/Firebase-32.png" },
+      { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
+      { name: "Tailwind CSS", image: "../assets/png-32px/tailwindCSS-32.png" },
     ],
   },
   {
@@ -33,11 +33,11 @@ const projects = [
       "Chit Chat is an app where users can message other logged-in users. The primary focus of this app was to set up a real-time chat with a filter to block toxic messages.",
     image: "../assets/beatdriver.png",
     github: "",
-    deployed: "",
+    deployed: "https://chat-app-git-main-arfgit1.vercel.app/login",
     stack: [
-      { name: "React", image: "../assets/React-32.png" },
-      { name: "Firebase", image: "../assets/Firebase-32.png" },
-      { name: "Tensorflow", image: "../assets/tensorflow-32.png" },
+      { name: "React", image: "../assets/png-32px/React-32.png" },
+      { name: "Firebase", image: "../assets/png-32px/Firebase-32.png" },
+      { name: "Tensorflow", image: "../assets/png-32px/tensorflow-32.png" },
     ],
   },
   {
@@ -48,11 +48,11 @@ const projects = [
     github: "",
     deployed: "",
     stack: [
-      { name: "PostgreSQL", image: "../assets/postgresql-32.png" },
-      { name: "Express", image: "../assets/express-32.png" },
-      { name: "React", image: "../assets/React-32.png" },
-      { name: "Nodejs", image: "../assets/Nodejs-32.png" },
-      { name: "Material UI", image: "../assets/MUI-32.png" },
+      { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
+      { name: "Express", image: "../assets/png-32px/express-32.png" },
+      { name: "React", image: "../assets/png-32px/React-32.png" },
+      { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
+      { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
     ],
   },
 ];
@@ -90,7 +90,6 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
           variants={container}
         >
           <div
@@ -99,16 +98,19 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          {projects?.map(({ title, description, image, stack }, i) => (
-            <Project
-              key={i}
-              title={title}
-              description={description}
-              image={image}
-              stack={stack}
-            />
-          ))}
-
+          {projects?.map(
+            ({ title, description, image, stack, github, deployed }, i) => (
+              <Project
+                key={i}
+                title={title}
+                description={description}
+                image={image}
+                stack={stack}
+                github={github}
+                deployed={deployed}
+              />
+            )
+          )}
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-montserrat font-semibold"
