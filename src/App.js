@@ -17,12 +17,13 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setIsTopOfPage(true);
+      if (window.scrollY === 0) {
+        setIsTopOfPage(true);
+        setSelectedPage("home");
+      }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -60,6 +61,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
+
       {/* Projects */}
       <div className="w-5/6 mx-auto">
         <motion.div
@@ -71,6 +73,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
+
       {/* Contact */}
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
@@ -82,6 +85,7 @@ function App() {
         </motion.div>
       </div>
 
+      {/* Footer */}
       <Footer setSelectedPage={setSelectedPage} />
     </div>
   );

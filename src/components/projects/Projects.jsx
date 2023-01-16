@@ -55,6 +55,21 @@ const projects = [
       { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
     ],
   },
+  {
+    title: "GameMap",
+    description:
+      "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
+    image: "../assets/beatdriver.png",
+    github: "",
+    deployed: "",
+    stack: [
+      { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
+      { name: "Express", image: "../assets/png-32px/express-32.png" },
+      { name: "React", image: "../assets/png-32px/React-32.png" },
+      { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
+      { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
+    ],
+  },
 ];
 
 const Projects = () => {
@@ -86,7 +101,7 @@ const Projects = () => {
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3 gap-5 overflow-y-scroll"
+          className="sm:grid sm:grid-cols-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

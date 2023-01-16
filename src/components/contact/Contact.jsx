@@ -12,12 +12,11 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     const isValid = await trigger();
-
     if (!isValid) e.preventDefault();
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="py-48">
       {/* HEADING */}
       <motion.div
         initial="hidden"
@@ -126,7 +125,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white ease-in transition duration-200"
+              className="p-5 bg-yellow font-semibold rounded-sm text-deep-blue mt-5 hover:bg-red hover:text-white ease-in transition duration-200"
               type="submit"
             >
               SEND

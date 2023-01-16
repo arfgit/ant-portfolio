@@ -17,7 +17,7 @@ const Project = ({ title, description, image, stack, github, deployed }) => {
         <p className="text-2xl font-montserrat font-semibold">{title}</p>
         <p className="text-sm mt-2 font-karla font-light">{description}</p>
         <TechStackIcons stack={stack} />
-        {/* <div className="flex justify-center font-montserrat md:justify-start">
+        <div className="flex justify-center font-montserrat md:justify-start">
           {deployed && (
             <a
               className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white  ease-in transition duration-200"
@@ -40,7 +40,7 @@ const Project = ({ title, description, image, stack, github, deployed }) => {
               </div>
             </a>
           )}
-        </div> */}
+        </div>
       </div>
       <img src={`../assets/project-1.jpeg`} alt={projectTitle} />
     </motion.div>
