@@ -2,6 +2,13 @@ import React from "react";
 import LineGradient from "../../features/gradients/LineGradient";
 import useMediaQuery from "../../features/hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import TechStackIcons from "../../features/icons/TechStackIcons";
+
+const skills = {
+  frontend: [],
+  backend: [],
+  tools: [],
+};
 
 const Skills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -20,14 +27,10 @@ const Skills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+          <p className="font-montserrat font-semibold text-4xl mb-5">
+            MY <span className="text-yellow">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
-          </p>
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -66,15 +69,13 @@ const Skills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Experience
+                Frontend
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+            <TechStackIcons />
           </p>
         </motion.div>
 
@@ -94,7 +95,7 @@ const Skills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+                Backend
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
@@ -121,9 +122,7 @@ const Skills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
-              </p>
+              <p className="font-playfair font-semibold text-3xl mt-3">Tools</p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>

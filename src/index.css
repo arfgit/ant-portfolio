@@ -9,6 +9,6 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #17171f;
+  background-color: #222831;
   @apply text-white;
 }

@@ -5,20 +5,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "deep-blue": "#17171f",
-        blue: "#2CBCE9",
-        red: "#DC4492",
+        "deep-blue": "#222831",
+        blue: "#00ADB5",
+        red: "#393E46",
         yellow: "#FDCC49",
         grey: "#ededed",
+        white: "#EEEEEE",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        error: "#FF0000",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
           "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
 
         "gradient-rainblue":
-          "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+          "linear-gradient(90deg, #00ADB5 14.53%, #393E46 69.36%, #FDCC49 117.73%)",
       }),
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
