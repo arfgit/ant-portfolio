@@ -9,10 +9,15 @@ const Skill = ({ name, image }) => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.5 }}
-        className="rounded-full border border-deep-blue bg-blue object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale"
       >
-        <img src="../assets/png-64px/firebase-64.png" alt="" />
-        <figcaption className="flex justify-center">React</figcaption>
+        <img
+          className="mx-auto"
+          src="../assets/png-64px/express-js-64-inverted.png"
+          alt=""
+        />
+        <p className="text-center text-sm font-karla font-semibold">
+          React Native
+        </p>
       </motion.div>
     </div>
   );

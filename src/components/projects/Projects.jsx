@@ -19,7 +19,7 @@ const projects = [
     github: "https://github.com/FC-TEAM-VISA/music-collab-app",
     deployed: "https://beatdriver.vercel.app/",
     stack: [
-      { name: "Nextjs", image: "../assets/png-32px/nextjs-32.png" },
+      { name: "Nextjs", image: "../assets/png-32px/nextjs-32-inverted.png" },
       { name: "React", image: "../assets/png-32px/React-32.png" },
       { name: "Web Audio API", image: "../assets/png-32px/WebAudioAPI-32.png" },
       { name: "Firebase", image: "../assets/png-32px/Firebase-32.png" },
@@ -45,11 +45,11 @@ const projects = [
     description:
       "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
     image: "../assets/beatdriver.png",
-    github: "",
+    github: "https://github.com/graceshopper-team-map/graceshopper-project",
     deployed: "",
     stack: [
       { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
-      { name: "Express", image: "../assets/png-32px/express-32.png" },
+      { name: "Express", image: "../assets/png-32px/express-32-inverted.png" },
       { name: "React", image: "../assets/png-32px/React-32.png" },
       { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
       { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
@@ -60,11 +60,11 @@ const projects = [
     description:
       "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
     image: "../assets/beatdriver.png",
-    github: "",
+    github: "https://github.com/graceshopper-team-map/graceshopper-project",
     deployed: "",
     stack: [
       { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
-      { name: "Express", image: "../assets/png-32px/express-32.png" },
+      { name: "Express", image: "../assets/png-32px/express-32-inverted.png" },
       { name: "React", image: "../assets/png-32px/React-32.png" },
       { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
       { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
@@ -95,7 +95,6 @@ const Projects = () => {
         <div className="flex justify-center mt-5">
           <LineGradient width="w-1/3" />
         </div>
-        {/* <p className="mt-10 mb-7">Testing shit</p> */}
       </motion.div>
 
       {/* PROJECTS */}

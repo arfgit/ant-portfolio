@@ -13,6 +13,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     const isValid = await trigger();
     if (!isValid) e.preventDefault();
+    else e.target.reset();
   };
 
   return (
