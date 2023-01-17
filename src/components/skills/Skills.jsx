@@ -13,8 +13,9 @@ const Grid = ({ name, image }) => {
   return (
     <motion.div
       className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 mx-auto mt-14 items-center"
-      initial="hidden"
-      whileInView="visible"
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.5 }}
     >
       <div className="grid grid-cols-5 gap-10">
