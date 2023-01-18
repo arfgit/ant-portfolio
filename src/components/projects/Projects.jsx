@@ -70,66 +70,6 @@ const projects = [
       { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
     ],
   },
-  {
-    title: "PokeApp",
-    description:
-      "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
-    image: "../assets/beatdriver.png",
-    github: "https://github.com/graceshopper-team-map/graceshopper-project",
-    deployed: "",
-    stack: [
-      { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
-      { name: "Express", image: "../assets/png-32px/express-32-inverted.png" },
-      { name: "React", image: "../assets/png-32px/React-32.png" },
-      { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
-      { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
-    ],
-  },
-  {
-    title: "PokeApp",
-    description:
-      "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
-    image: "../assets/beatdriver.png",
-    github: "https://github.com/graceshopper-team-map/graceshopper-project",
-    deployed: "",
-    stack: [
-      { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
-      { name: "Express", image: "../assets/png-32px/express-32-inverted.png" },
-      { name: "React", image: "../assets/png-32px/React-32.png" },
-      { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
-      { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
-    ],
-  },
-  {
-    title: "PokeApp",
-    description:
-      "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
-    image: "../assets/beatdriver.png",
-    github: "https://github.com/graceshopper-team-map/graceshopper-project",
-    deployed: "",
-    stack: [
-      { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
-      { name: "Express", image: "../assets/png-32px/express-32-inverted.png" },
-      { name: "React", image: "../assets/png-32px/React-32.png" },
-      { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
-      { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
-    ],
-  },
-  {
-    title: "PokeApp",
-    description:
-      "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
-    image: "../assets/beatdriver.png",
-    github: "https://github.com/graceshopper-team-map/graceshopper-project",
-    deployed: "",
-    stack: [
-      { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
-      { name: "Express", image: "../assets/png-32px/express-32-inverted.png" },
-      { name: "React", image: "../assets/png-32px/React-32.png" },
-      { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
-      { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
-    ],
-  },
 ];
 
 const Projects = () => {
@@ -160,7 +100,7 @@ const Projects = () => {
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="md:grid md:grid-cols-3 "
+          className="md:grid md:grid-cols-3 md:gap-10"
           variants={container}
           initial="hidden"
           whileInView="visible"

@@ -4,12 +4,35 @@ import { motion } from "framer-motion";
 import Skill from "./Skill";
 
 const skills = {
-  frontend: [],
-  backend: [],
-  tools: [],
+  frontend: [
+    { name: "React", image: "../assets/png-64px/react-64.png" },
+    { name: "Nextjs", image: "../assets/png-64px/nextjs-64-inverted.png" },
+    { name: "Redux", image: "../assets/png-64px/redux-64.png" },
+    { name: "Javascript", image: "../assets/png-64px/javascript-64.png" },
+    { name: "HTML", image: "../assets/png-64px/html-64.png" },
+    { name: "CSS3", image: "../assets/png-64px/css-64.png" },
+    { name: "TailwindCSS", image: "../assets/png-64px/tailwindcss-64.png" },
+    { name: "MUI", image: "../assets/png-64px/MUI-64.png" },
+  ],
+  backend: [
+    { name: "Nodejs", image: "../assets/png-64px/node-js-64.png" },
+    { name: "Express", image: "../assets/png-64px/express-js-64-inverted.png" },
+    { name: "Sequelize", image: "../assets/png-64px/sequelize-64.png" },
+    { name: "PostgreSQL", image: "../assets/png-64px/postgresql-64.png" },
+    { name: "Firebase", image: "../assets/png-64px/firebase-64.png" },
+  ],
+  tools: [
+    { name: "Git", image: "../assets/png-64px/git-64.png" },
+    { name: "Github", image: "../assets/png-64px/github-64-inverted.png" },
+    { name: "Jasmine", image: "../assets/png-64px/jasmine-64.png" },
+    { name: "Mocha", image: "../assets/png-64px/mocha-64.png" },
+    { name: "Chai", image: "../assets/png-64px/chai-64.png" },
+    { name: "Linux", image: "../assets/png-64px/linux-64-inverted.png" },
+    { name: "Webpack", image: "../assets/png-64px/webpack-64.png" },
+  ],
 };
 
-const Grid = ({ name, image }) => {
+const Grid = ({ skills }) => {
   return (
     <motion.div
       className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 mx-auto mt-14 items-center"
@@ -19,16 +42,9 @@ const Grid = ({ name, image }) => {
       viewport={{ once: true, amount: 0.5 }}
     >
       <div className="grid grid-cols-5 gap-10">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        {skills?.map(({ name, image }, i) => (
+          <Skill key={i} name={name} image={image} />
+        ))}
       </div>
     </motion.div>
   );
@@ -79,7 +95,7 @@ const Skills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 border-yellow bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          <Grid />
+          <Grid skills={skills?.frontend} />
         </motion.div>
 
         {/* Backend */}
@@ -103,7 +119,7 @@ const Skills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
-          <Grid />
+          <Grid skills={skills?.backend} />
         </motion.div>
 
         {/* Tools */}
@@ -122,12 +138,12 @@ const Skills = () => {
             <div className="z-10">
               <p className="font-montserrat font-semibold text-5xl">03</p>
               <p className="font-montserrat font-semibold text-3xl mt-3">
-                DevTools
+                DevTools & Extras
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
-          <Grid />
+          <Grid skills={skills?.tools} />
         </motion.div>
       </div>
 

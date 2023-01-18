@@ -10,13 +10,9 @@ const Skill = ({ name, image }) => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <img
-          className="mx-auto"
-          src="../assets/png-64px/express-js-64-inverted.png"
-          alt=""
-        />
-        <p className="text-center text-sm font-karla font-semibold">
-          React Native
+        <img src={image} alt={name} title={name} />
+        <p className="absolute left-2/4 -translate-x-2/4 text-xs mt-1 font-karla font-semibold">
+          {name}
         </p>
       </motion.div>
     </div>
