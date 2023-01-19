@@ -58,15 +58,13 @@ const projects = [
   {
     title: "PokeApp",
     description:
-      "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
+      "A React application using the Pokemon API. This app simulates a PokeDex where users can search, filter, and get more information on any pokemon within the first 5 regions.",
     image: "../assets/beatdriver.png",
-    github: "https://github.com/graceshopper-team-map/graceshopper-project",
-    deployed: "",
+    github: "https://github.com/arfgit/poke-app",
+    deployed: "https://poke-app-arfg.vercel.app/",
     stack: [
-      { name: "PostgreSQL", image: "../assets/png-32px/postgresql-32.png" },
-      { name: "Express", image: "../assets/png-32px/express-32-inverted.png" },
       { name: "React", image: "../assets/png-32px/React-32.png" },
-      { name: "Nodejs", image: "../assets/png-32px/Nodejs-32.png" },
+      { name: "Redux", image: "../assets/png-32px/redux-32.png" },
       { name: "Material UI", image: "../assets/png-32px/MUI-32.png" },
     ],
   },

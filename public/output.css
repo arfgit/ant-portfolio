@@ -759,6 +759,14 @@ video {
   margin-top: 0.5rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1282,6 +1290,11 @@ body,
   z-index: -1;
 }
 
+.before\:before\:z-\[-1\]::before::before{
+  content: var(--tw-content);
+  z-index: -1;
+}
+
 .before\:h-full::before{
   content: var(--tw-content);
   height: 100%;
@@ -1333,6 +1346,11 @@ body,
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(253 204 73 / var(--tw-border-opacity));
+}
+
+.before\:bg-gradient-rainblue::before{
+  content: var(--tw-content);
+  background-image: linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%);
 }
 
 .hover\:bg-red:hover{
