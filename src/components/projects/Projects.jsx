@@ -15,7 +15,7 @@ const projects = [
     title: "Beatdriver",
     description:
       "Beatdriver is a beginner-friendly music creation tool you can use right in the browser. Users can create beats with built-in sounds and effects, upload their samples, and save and record their projects to share with anyone!",
-    image: "../assets/beatdriver.png",
+    image: "../assets/beatdriver-resize.gif",
     github: "https://github.com/FC-TEAM-VISA/music-collab-app",
     deployed: "https://beatdriver.vercel.app/",
     stack: [
@@ -31,7 +31,7 @@ const projects = [
     title: "Chit Chat",
     description:
       "Chit Chat is an app where users can message other logged-in users. The primary focus of this app was to set up a real-time chat with a filter to block toxic messages.",
-    image: "../assets/beatdriver.png",
+    image: "../assets/chatapp.gif",
     github: "https://github.com/arfgit/chat-app",
     deployed: "https://chat-app-git-main-arfgit1.vercel.app/login",
     stack: [
@@ -44,7 +44,7 @@ const projects = [
     title: "GameMap",
     description:
       "Developed with the PERN stack, GameMap is an e-commerce website that sells video games. Users can view all products and add games to their cart for checkout.",
-    image: "../assets/beatdriver.png",
+    image: "../assets/gamemap.gif",
     github: "https://github.com/graceshopper-team-map/graceshopper-project",
     deployed: "",
     stack: [
@@ -59,7 +59,7 @@ const projects = [
     title: "PokeApp",
     description:
       "A React application using the Pokemon API. This app simulates a PokeDex where users can search, filter, and get more information on any pokemon within the first 5 regions.",
-    image: "../assets/beatdriver.png",
+    image: "../assets/pokeapp.gif",
     github: "https://github.com/arfgit/poke-app",
     deployed: "https://poke-app-arfg.vercel.app/",
     stack: [

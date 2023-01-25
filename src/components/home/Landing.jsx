@@ -49,7 +49,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="text-6xl font-montserrat font-extrabold z-10 text-center md:text-start">
+          <div className="text-6xl  hover:text-yellow ease-in transition duration-200 font-montserrat font-extrabold z-10 text-center md:text-start">
             Anthony{" "}
             <span className="xs:relative xs:font-extrabold z-20 xs:before:content-brush before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]">
               Feliz
