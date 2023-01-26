@@ -77,16 +77,11 @@ module.exports = {
             transform: "scale3d(1, 1, 1)",
           },
         },
-
-        shine: {
-          "100%": { left: "125%" },
-        },
       },
 
       animation: {
         rubber: "rubberBand 0.8s alternate ease-out",
         extraRubber: "extra 0.8s ease-in-out",
-        shine: "shine 1s",
       },
     },
     screens: {
