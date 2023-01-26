@@ -1,4 +1,3 @@
-import React from "react";
 import LineGradient from "../../features/gradients/LineGradient";
 import { motion } from "framer-motion";
 import Skill from "./Skill";

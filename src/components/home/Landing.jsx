@@ -1,16 +1,16 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import useMediaQuery from "../../features/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "../../features/icons/SocialMediaIcons";
 
 const Landing = ({ setSelectedPage }) => {
+  const firstName = "Anthony";
+  const lastName = "Feliz";
+
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [activeLetter, setActiveLetter] = useState(null);
   const nameRef = useRef([]);
-
-  const firstName = "Anthony";
-  const lastName = "Feliz";
 
   const handleMouseEnter = (nameIndex, letterIndex) => {
     setActiveLetter([nameIndex, letterIndex]);
@@ -18,12 +18,20 @@ const Landing = ({ setSelectedPage }) => {
   };
 
   const handleMouseLeave = () => {
-    setTimeout(() => {
-      nameRef?.current[activeLetter[0]][activeLetter[1]]?.classList?.remove(
-        "hover-bounce"
-      );
-      setActiveLetter(null);
-    }, 900);
+    if (!activeLetter) return;
+    const { current } = nameRef;
+    if (
+      current &&
+      current[activeLetter[0]] &&
+      current[activeLetter[0]][activeLetter[1]]
+    ) {
+      const element = current[activeLetter[0]][activeLetter[1]];
+      const animationDuration = getComputedStyle(element).animationDuration;
+      setTimeout(() => {
+        element.classList.remove("hover-bounce");
+        setActiveLetter(null);
+      }, parseFloat(animationDuration) * 1000);
+    }
   };
 
   return (
@@ -84,7 +92,7 @@ const Landing = ({ setSelectedPage }) => {
                 {letter}
               </span>
             ))}{" "}
-            <span className="xs:relative xs:font-extrabold z-20 xs:before:content-brush before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]">
+            <span className="xs:relative xs:font-extrabold z-20  before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]">
               {lastName.split("").map((letter, i) => (
                 <span
                   key={i}

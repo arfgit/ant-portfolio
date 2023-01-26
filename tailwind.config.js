@@ -26,9 +26,7 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
         karla: ["Karla", "sans-serif"],
       },
-      content: {
-        // brush: "url('./assets/brush.png')",
-      },
+      content: {},
       keyframes: {
         rubberBand: {
           "0%": {
@@ -81,7 +79,7 @@ module.exports = {
 
       animation: {
         rubber: "rubberBand 0.8s alternate ease-out",
-        extraRubber: "extra 0.8s ease-in-out",
+        extraRubber: "extra 800ms ease-in-out",
       },
     },
     screens: {

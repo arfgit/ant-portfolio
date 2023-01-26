@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../../features/hooks/useMediaQuery";
 import Links from "./Links";

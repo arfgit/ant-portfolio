@@ -28,7 +28,6 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // FIX THE ISSUE WITH PARTICLES AND ANIMATIONS
   return (
     <div className="app">
       {/* NAVBAR */}
@@ -37,9 +36,16 @@ function App() {
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
+
+      {/* PARTICLES */}
+      {isAboveMediumScreens && (
+        <div className="absolute">
+          <ParticleBackground />
+        </div>
+      )}
+
       {/* LANDING */}
-      <div className="w-5/6 mx-auto md:h-full">
-        <ParticleBackground />
+      <div className="w-5/6 mx-auto md:h-full overflow-hidden">
         {isAboveMediumScreens && (
           <Dots selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
@@ -65,7 +71,7 @@ function App() {
       </div>
       <LineGradient />
 
-      {/* Projects */}
+      {/* PROJECTS */}
       <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
@@ -77,7 +83,7 @@ function App() {
       </div>
       <LineGradient />
 
-      {/* Contact */}
+      {/* CONTACT */}
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
@@ -88,7 +94,7 @@ function App() {
         </motion.div>
       </div>
 
-      {/* Footer */}
+      {/* FOOTER */}
       <Footer setSelectedPage={setSelectedPage} />
     </div>
   );

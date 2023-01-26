@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import TechStackIcons from "../../features/icons/TechStackIcons";
 
@@ -14,7 +13,9 @@ const Project = ({ title, description, image, stack, github, deployed }) => {
     <motion.div variants={singles} className="relative">
       <div className={overlay}>
         <p className="text-2xl font-montserrat font-semibold">{title}</p>
-        <p className="text-sm mt-[5px] font-karla font-light">{description}</p>
+        <p className="text-sm md:text-base mt-[5px] font-karla font-light">
+          {description}
+        </p>
         <TechStackIcons stack={stack} />
         <div className="flex -mt-[20px] justify-center font-karla md:justify-start">
           {deployed && (
