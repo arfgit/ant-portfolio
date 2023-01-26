@@ -12,3 +12,11 @@ body,
   background-color: #00040d;
   @apply text-white;
 }
+
+.hover-bounce {
+  @apply inline-block animate-extraRubber;
+}
+
+.yellow {
+  @apply hover:text-yellow ease-in transition;
+}

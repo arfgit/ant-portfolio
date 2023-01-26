@@ -29,6 +29,65 @@ module.exports = {
       content: {
         // brush: "url('./assets/brush.png')",
       },
+      keyframes: {
+        rubberBand: {
+          "0%": {
+            transform: "scaleX(1)",
+          },
+          "40%": {
+            transform: "scaleX(1.12) scaleY(0.75)",
+          },
+          "55%": {
+            transform: "scaleX(0.85) scaleY(1)",
+          },
+          "65%": {
+            transform: "scaleX(1.09) scaleY(0.85)",
+          },
+          "75%": {
+            transform: "scaleX(0.9)  scaleY(1)",
+          },
+          "90%": {
+            transform: "scaleX(1.05) scaleY(0.95)",
+          },
+          "100%": {
+            transform: "scaleX(1) scaleY(1)",
+          },
+        },
+
+        extra: {
+          "0%": {
+            transform: "scale3d(1, 1, 1)",
+          },
+          "30%": {
+            transform: "scale3d(1.25, 0.75, 1)",
+          },
+          "40%": {
+            transform: "scale3d(0.75, 1.25, 1)",
+          },
+          "50%": {
+            transform: "scale3d(1.15, 0.85, 1)",
+          },
+          "65%": {
+            transform: "scale3d(0.95, 1.05, 1)",
+          },
+          "75%": {
+            transform: "scale3d(1.05, 0.95, 1)",
+          },
+          "100%": {
+            transform: "scale3d(1, 1, 1)",
+          },
+        },
+
+        shine: {
+          "100%": { left: "125%" },
+        },
+      },
+
+      animation: {
+        rubber: "rubberBand 0.8s alternate ease-out",
+        extraRubber: "extra 0.8s ease-in-out",
+        shine: "shine 1s",
+      },
     },
     screens: {
       xs: "480px",
@@ -39,5 +98,5 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
