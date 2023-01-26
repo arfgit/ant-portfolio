@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import LineGradient from "../../features/gradients/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
@@ -10,10 +10,11 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
+  const formRef = useRef();
+
   const handleSubmit = async (e) => {
     const isValid = await trigger();
     if (!isValid) e.preventDefault();
-    else e.target.reset();
   };
 
   return (
@@ -68,7 +69,7 @@ const Contact = () => {
           className="basis-1/2 mt-10 md:mt-0"
         >
           <form
-            target="_blank"
+            ref={formRef}
             onSubmit={handleSubmit}
             action="https://formsubmit.co/57a5d2dad40c73e4f743db4222cb431f"
             method="POST"
@@ -76,6 +77,7 @@ const Contact = () => {
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
               type="text"
+              name="name"
               placeholder="NAME"
               {...register("name", {
                 required: true,
@@ -92,6 +94,7 @@ const Contact = () => {
             <input
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
+              name="email"
               placeholder="EMAIL"
               {...register("email", {
                 required: true,
@@ -107,6 +110,7 @@ const Contact = () => {
 
             <textarea
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              type="text"
               name="message"
               placeholder="MESSAGE"
               rows="4"

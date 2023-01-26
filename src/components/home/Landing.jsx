@@ -14,12 +14,12 @@ const Landing = ({ setSelectedPage }) => {
 
   const handleMouseEnter = (nameIndex, letterIndex) => {
     setActiveLetter([nameIndex, letterIndex]);
-    nameRef.current[nameIndex][letterIndex].classList.add("hover-bounce");
+    nameRef?.current[nameIndex][letterIndex]?.classList?.add("hover-bounce");
   };
 
   const handleMouseLeave = () => {
     setTimeout(() => {
-      nameRef.current[activeLetter[0]][activeLetter[1]].classList.remove(
+      nameRef?.current[activeLetter[0]][activeLetter[1]]?.classList?.remove(
         "hover-bounce"
       );
       setActiveLetter(null);
@@ -41,7 +41,7 @@ const Landing = ({ setSelectedPage }) => {
             <img
               src="assets/Me-test-1.png"
               alt="profile"
-              className="hover:filter saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="saturate-200 z-10 w-full max-w-[400px] md:max-w-[600px]"
             />
           </div>
         ) : (
@@ -83,20 +83,7 @@ const Landing = ({ setSelectedPage }) => {
               >
                 {letter}
               </span>
-            ))}
-            {/* <span
-              className={`yellow ${isAnimated ? "hover-bounce" : ""}`}
-              onMouseEnter={() => setIsAnimated(true)}
-              onAnimationEnd={() => setIsAnimated(false)}
-            >
-              A
-            </span>
-            <span className="yellow hover-bounce">n</span>
-            <span className="yellow hover-bounce">t</span>
-            <span className="yellow hover-bounce">h</span>
-            <span className="yellow hover-bounce">o</span>
-            <span className="yellow hover-bounce">n</span>
-            <span className="yellow hover-bounce">y</span> */}{" "}
+            ))}{" "}
             <span className="xs:relative xs:font-extrabold z-20 xs:before:content-brush before:absolute before:-left-[30px] before:-top-[90px] before:z-[-1]">
               {lastName.split("").map((letter, i) => (
                 <span

@@ -9,6 +9,7 @@ import LineGradient from "./features/gradients/LineGradient";
 import useMediaQuery from "./features/hooks/useMediaQuery";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import ParticleBackground from "./features/particles/ParticleBackground";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -27,8 +28,9 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // FIX THE ISSUE WITH PARTICLES AND ANIMATIONS
   return (
-    <div className="app bg-deep-blue">
+    <div className="app">
       {/* NAVBAR */}
       <Navbar
         selectedPage={selectedPage}
@@ -37,6 +39,7 @@ function App() {
       />
       {/* LANDING */}
       <div className="w-5/6 mx-auto md:h-full">
+        <ParticleBackground />
         {isAboveMediumScreens && (
           <Dots selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
