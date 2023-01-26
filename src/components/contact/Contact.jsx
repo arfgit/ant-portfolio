@@ -75,7 +75,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-blue font-semibold placeholder-deep-blue p-3"
               type="text"
               name="name"
               placeholder="NAME"
@@ -92,7 +92,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue font-semibold placeholder-deep-blue p-3 mt-5"
               type="text"
               name="email"
               placeholder="EMAIL"
@@ -109,7 +109,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue font-semibold placeholder-deep-blue p-3 mt-5"
               type="text"
               name="message"
               placeholder="MESSAGE"

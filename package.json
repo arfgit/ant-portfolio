@@ -1,6 +1,8 @@
 {
   "name": "ant-portfolio",
+  "homepage": "http://anthonyfeliz.com/",
   "version": "0.1.0",
+  "description": "my portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
