@@ -7,15 +7,18 @@ const singles = {
 };
 
 const Project = ({ title, description, image, stack, github, deployed }) => {
-  const overlay = `absolute h-full w-full opacity-0 hover:opacity-90 ease-in transition duration-200 bg-deep-blue text-white z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+  const overlay = `absolute inset-0 opacity-0 hover:opacity-90 ease-in transition duration-200 bg-deep-blue text-white z-30 flex flex-col justify-center items-center text-center p-4 md:p-16 text-deep-blue`;
 
   return (
     <motion.div variants={singles} className="relative">
       <div className={overlay}>
-        <p className="text-2xl font-montserrat font-semibold">{title}</p>
-        <p className="text-sm md:text-base mt-[5px] font-karla font-light">
+        <p className="text-xl md:text-2xl font-montserrat font-semibold">
+          {title}
+        </p>
+        <p className="text-xs md:text-sm mt-[5px] font-karla font-light">
           {description}
         </p>
+
         <TechStackIcons stack={stack} />
         <div className="flex -mt-[20px] justify-center font-karla md:justify-start">
           {deployed && (
@@ -41,7 +44,11 @@ const Project = ({ title, description, image, stack, github, deployed }) => {
           )}
         </div>
       </div>
-      <img src={image} alt={title} width="400" height="400" />
+      <img
+        src={image}
+        alt={title}
+        className="w-full md:w-auto md:h-[400px] object-cover"
+      />
     </motion.div>
   );
 };

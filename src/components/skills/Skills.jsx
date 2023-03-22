@@ -40,7 +40,7 @@ const Grid = ({ skills }) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.5 }}
     >
-      <div className="grid grid-cols-5 gap-10">
+      <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10">
         {skills?.map(({ name, image }, i) => (
           <Skill key={i} name={name} image={image} />
         ))}
