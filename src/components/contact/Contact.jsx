@@ -2,6 +2,7 @@ import { useRef } from "react";
 import LineGradient from "../../features/gradients/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import Quote from "../../features/quote/Quote";
 
 const Contact = () => {
   const {
@@ -54,7 +55,11 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-me.jpeg" alt="contact" />
+          {/* <img src="../assets/quote.png" alt="contact" className="rounded-lg" /> */}
+          <Quote
+            quote="The goal of the Web is to serve humanity. We build it now so that those who come to it later will be able to create things that we cannot ourselves imagine."
+            author="Tim Berners-Lee"
+          />
         </motion.div>
 
         <motion.div
@@ -130,7 +135,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold rounded-sm text-deep-blue mt-5 hover:bg-red hover:text-white ease-in transition duration-200"
+              className="p-5 bg-yellow font-semibold   text-deep-blue mt-5 hover:bg-red hover:text-white ease-in transition duration-200"
               type="submit"
             >
               SEND
