@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 #root,

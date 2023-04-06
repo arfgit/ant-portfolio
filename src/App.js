@@ -50,7 +50,7 @@ function App() {
           <Dots selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
         <motion.div
-          margin="0 0 -200px 0"
+          className="mb-0 md:mb-[-200px]"
           amount="all"
           onViewportEnter={() => setSelectedPage("home")}
         >
@@ -62,7 +62,7 @@ function App() {
       {/* SKILLS */}
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
-          margin="0 0 -200px 0"
+          className="mb-0 md:mb-[-200px]"
           amount="all"
           onViewportEnter={() => setSelectedPage("skills")}
         >
@@ -74,7 +74,7 @@ function App() {
       {/* PROJECTS */}
       <div className="w-5/6 mx-auto">
         <motion.div
-          margin="0 0 -200px 0"
+          className="mb-0 md:mb-[-200px]"
           amount="all"
           onViewportEnter={() => setSelectedPage("projects")}
         >
@@ -86,7 +86,7 @@ function App() {
       {/* CONTACT */}
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
-          margin="0 0 -200px 0"
+          className="mb-0 md:mb-[-200px]"
           amount="all"
           onViewportEnter={() => setSelectedPage("contact")}
         >
