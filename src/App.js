@@ -29,28 +29,27 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <div className="app space-y-8">
+      {" "}
+      {/* Add space-y-* utility class for spacing */}
       {/* NAVBAR */}
       <Navbar
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
-
       {/* PARTICLES */}
       {isAboveMediumScreens && (
         <div className="absolute">
           <ParticleBackground />
         </div>
       )}
-
       {/* LANDING */}
       <div className="w-5/6 mx-auto md:h-full overflow-hidden">
         {isAboveMediumScreens && (
           <Dots selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
         <motion.div
-          className="mb-0 md:mb-[-200px]"
           amount="all"
           onViewportEnter={() => setSelectedPage("home")}
         >
@@ -58,11 +57,9 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-
       {/* SKILLS */}
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
-          className="mb-0 md:mb-[-200px]"
           amount="all"
           onViewportEnter={() => setSelectedPage("skills")}
         >
@@ -70,11 +67,9 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-
       {/* PROJECTS */}
       <div className="w-5/6 mx-auto">
         <motion.div
-          className="mb-0 md:mb-[-200px]"
           amount="all"
           onViewportEnter={() => setSelectedPage("projects")}
         >
@@ -82,18 +77,15 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-
       {/* CONTACT */}
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
-          className="mb-0 md:mb-[-200px]"
           amount="all"
           onViewportEnter={() => setSelectedPage("contact")}
         >
           <Contact />
         </motion.div>
       </div>
-
       {/* FOOTER */}
       <Footer setSelectedPage={setSelectedPage} />
     </div>
