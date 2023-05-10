@@ -134,7 +134,7 @@ const Landing = ({ setSelectedPage }) => {
           <a
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white  ease-in transition duration-200"
             onClick={() => setSelectedPage("contact")}
-            href="../assets/af-tech-resume.pdf"
+            href="../assets/AnthonyFeliz-Resume.pdf"
             download="anthonyfeliz-resume"
           >
             Resume
